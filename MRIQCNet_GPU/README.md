@@ -20,3 +20,7 @@ Limitations: With the NVIDIA Container Toolkit for Docker 19.03, only --gpus all
 docker pull ...
 
 ## Step 4: Run MRIQCNet
+
+1/ Participant-level
+
+2/ Group-level
