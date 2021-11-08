@@ -1,1 +1,1 @@
-# MRIQCNet <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
+# MRIQCNet <img src="https://emojipedia.org/emoji/%F0%9F%A7%A0/" width="30px">
