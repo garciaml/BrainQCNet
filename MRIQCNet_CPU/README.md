@@ -1,5 +1,7 @@
 # DOC for CPU 
 
+If you do not want to use Docker, go [here](https://github.com/garciaml/MRIQCNet/tree/master/MRIQCNet_CPU/MRIQCNet_CPU_no_docker) !
+
 ## Step 1: Install Docker
 
 https://docs.docker.com/get-docker/
