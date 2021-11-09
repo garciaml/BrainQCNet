@@ -1,5 +1,5 @@
 # MRIQCNet : Detection of Artefacts on brain T1-weighted Scans
-# <img src="https://github.com/garciaml/MRIQCNet/blob/master/T1_low_quality.jpg" width="3000px">
+# <img src="https://github.com/garciaml/MRIQCNet/blob/master/T1_low_quality_2.jpg" width="3000px">
 
 MRIQCNet is a software that automatically detects the presence of defaults on brain structural MRI scans. 
 
