@@ -16,14 +16,15 @@ https://docs.nvidia.com/cuda/wsl-user-guide/index.html#known-limitations-for-lin
 Limitations: With the NVIDIA Container Toolkit for Docker 19.03, only --gpus all is supported. On multi-GPU systems it is not possible to filter for specific GPU devices by using specific index numbers to enumerate GPUs. 
 
 ## Step 3: Get our docker image
-
-docker pull ...
+```
+docker pull garciaml/brainqcnet:latest
+```
 
 ## Step 4: Run MRIQCNet
 
 **1/ Participant-level**
 ```
-docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet-cuda-gpu /bids_dir /out_dir participant
+docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet /bids_dir /out_dir participant
 ```
 This command-line launches BrainQCNet processing on all the subjects of BIDS_data. It generates folders into out_brainqcnet corresponding to each subject.
 In each subject folder in out_brainqcnet, there is six files:
@@ -36,18 +37,18 @@ In each subject folder in out_brainqcnet, there is six files:
 
 Example to set n_areas to 5:
 ```
-docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet-cuda-gpu /bids_dir /out_dir participant --n_areas 5
+docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet /bids_dir /out_dir participant --n_areas 5
 ```
 
 Example: generating the results of specific subjects 
 ```
-docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet-cuda-gpu /bids_dir /out_dir participant --participant_label 20001 20003
+docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet /bids_dir /out_dir participant --participant_label 20001 20003
 ```
 Here, it generates the results for sub-20001 and sub-20003 present into our BIDS_data.
 
 
 **2/ Group-level**
 ```
-docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet-cuda-gpu /bids_dir /out_dir group
+docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet /bids_dir /out_dir group
 ```
 This command-line launches the analysis at the group level: it gathers all the results from the analyses at the participant level, and stores the results into a file called **group_results.csv** into the folder out_brainqcnet.
