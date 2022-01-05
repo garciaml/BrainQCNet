@@ -16,6 +16,7 @@ https://docs.nvidia.com/cuda/wsl-user-guide/index.html#known-limitations-for-lin
 Limitations: With the NVIDIA Container Toolkit for Docker 19.03, only --gpus all is supported. On multi-GPU systems it is not possible to filter for specific GPU devices by using specific index numbers to enumerate GPUs. 
 
 ## Step 3: Get our docker image
+In your terminal, type:
 ```
 docker pull garciaml/brainqcnet:latest
 ```
