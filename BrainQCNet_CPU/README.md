@@ -5,8 +5,10 @@
 https://docs.docker.com/get-docker/
 
 ## Step 2: Get our docker image
-
-docker pull docker pull garciaml/brainqcnetcpu:latest
+In your terminal, type:
+```
+docker pull garciaml/brainqcnetcpu:latest
+```
 
 ## Step 3: Run MRIQCNet
 
