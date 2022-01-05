@@ -1,7 +1,5 @@
 # DOC for Nvidia GPU machines with CUDA
 
-If you do not want to use Docker, go [here](https://github.com/garciaml/BrainQCNet/tree/master/BrainQCNet_GPU/BrainQCNet_GPU_no_docker) !
-
 ## Pre-requisites: 
 Nvidia drivers and CUDA installed.
 
