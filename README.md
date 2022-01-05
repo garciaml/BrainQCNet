@@ -9,4 +9,4 @@ To run BrainQCNet on your data, you can either use the BIDS-app that works on **
 
 A list of Nvidia GPUs with CUDA technology is provided [here](https://developer.nvidia.com/cuda-gpus).
 
-**We strongly recommend users to run the app on a machine with CUDA-compatible GPU ! **
+**We strongly recommend users to run the app on a machine with CUDA-compatible GPU !**
