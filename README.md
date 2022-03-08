@@ -1,4 +1,4 @@
-# BrainQCNet : Detection of Artefacts on brain T1-weighted Scans
+# BrainQCNet : Detection of Artifacts on brain T1-weighted Scans
 # <img src="https://github.com/garciaml/BrainQCNet/blob/master/T1_low_quality_2.jpg" width="3000px">
 
 BrainQCNet is a software that automatically detects the presence of defaults on brain structural MRI scans. 
