@@ -23,7 +23,8 @@ docker pull garciaml/brainqcnet:latest
 
 ## Step 4: Get our best model
 In order to be able to run BrainQCNet, please download saved_models.zip that contains our best model [here](https://drive.google.com/file/d/16kmV3B6EM7_8ObRlejyjq18JvPv-KHr2/view?usp=sharing).
-You will need to unzip saved_models.zip, and to move saved_models/ to a choosen folder. We will need to refer to the path of this chosen folder when launching the app. 
+
+You will need to **unzip saved_models.zip**, and to move **saved_models/** to a choosen folder. We will need to refer to the path of this chosen folder when launching the app. 
 
 ## Step 5: Run BrainQCNet
 
