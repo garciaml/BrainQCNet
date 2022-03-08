@@ -10,11 +10,15 @@ In your terminal, type:
 docker pull garciaml/brainqcnetcpu:latest
 ```
 
-## Step 3: Run MRIQCNet
+## Step 3: Get our best model
+In order to be able to run BrainQCNet, please download saved_models.zip that contains our best model [here](https://drive.google.com/file/d/16kmV3B6EM7_8ObRlejyjq18JvPv-KHr2/view?usp=sharing).
+You will need to unzip saved_models.zip, and to move saved_models/ to a choosen folder. We will need to refer to the path of this chosen folder when launching the app. 
+
+## Step 4: Run BrainQCNet
 
 **1/ Participant-level**
 ```
-docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnetcpu /bids_dir /out_dir participant
+docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models
 ```
 This command-line launches BrainQCNet processing on all the subjects of BIDS_data. It generates folders into out_brainqcnet corresponding to each subject.
 In each subject folder in out_brainqcnet, there is six files:
@@ -27,12 +31,12 @@ In each subject folder in out_brainqcnet, there is six files:
 
 Example to set n_areas to 5:
 ```
-docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnetcpu /bids_dir /out_dir participant --n_areas 5
+docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models --n_areas 5
 ```
 
 Example: generating the results of specific subjects 
 ```
-docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnetcpu /bids_dir /out_dir participant --participant_label 20001 20003
+docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models --participant_label 20001 20003
 ```
 Here, it generates the results for sub-20001 and sub-20003 present into our BIDS_data.
 
