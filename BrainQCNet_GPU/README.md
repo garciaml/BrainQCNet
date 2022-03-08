@@ -1,5 +1,7 @@
 # DOC for Nvidia GPU machines with CUDA
 
+All the code of BrainQCNet for compatible GPUs is available [here](https://github.com/garciaml/BrainQCNet_GPU).
+
 ## Pre-requisites: 
 Nvidia drivers and CUDA installed.
 
