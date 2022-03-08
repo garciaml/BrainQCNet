@@ -21,7 +21,7 @@ In your terminal, type:
 docker pull garciaml/brainqcnet:latest
 ```
 
-## Step 4: Run MRIQCNet
+## Step 4: Run BrainQCNet
 
 **1/ Participant-level**
 ```
