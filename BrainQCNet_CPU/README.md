@@ -21,7 +21,7 @@ You will need to **unzip saved_models.zip**, and to move **saved_models/** to a 
 
 **1/ Participant-level**
 ```
-docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models
+docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models/resnet152/19112020/
 ```
 This command-line launches BrainQCNet processing on all the subjects of BIDS_data. It generates folders into out_brainqcnet corresponding to each subject.
 In each subject folder in out_brainqcnet, there is six files:
@@ -34,12 +34,12 @@ In each subject folder in out_brainqcnet, there is six files:
 
 Example to set n_areas to 5:
 ```
-docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models --n_areas 5
+docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models/resnet152/19112020/ --n_areas 5
 ```
 
 Example: generating the results of specific subjects 
 ```
-docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models --participant_label 20001 20003
+docker run -it --rm -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir -v /home/user/saved_models/:/saved_models:ro brainqcnetcpu /bids_dir /out_dir participant --modeldir /saved_models/resnet152/19112020/ --participant_label 20001 20003
 ```
 Here, it generates the results for sub-20001 and sub-20003 present into our BIDS_data.
 
