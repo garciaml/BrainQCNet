@@ -1,5 +1,7 @@
 # DOC for CPU 
 
+All the code of BrainQCNet for CPU machines is available [here](https://github.com/garciaml/BrainQCNet_CPU).
+
 ## Step 1: Install Docker
 
 https://docs.docker.com/get-docker/
