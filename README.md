@@ -14,7 +14,8 @@ A list of Nvidia GPUs with CUDA technology is provided [here](https://developer.
 
 ### How to report errors
 Users can get help using the [brainqcnet-users mailing list](https://groups.google.com/g/brainqcnet-users).
-All bugs, concerns and enhancement requests for this software can be submitted [here](https://github.com/garciaml/BrainQCNet_CPU/issues).
+
+All bugs, concerns and enhancement requests for this software can be submitted [here for the GPU version](https://github.com/garciaml/BrainQCNet_GPU/issues) and [here for the CPU version](https://github.com/garciaml/BrainQCNet_CPU/issues).
 
 ### Citation
 When using BrainQCNet, please include the following citation:
