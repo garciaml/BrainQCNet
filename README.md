@@ -10,3 +10,11 @@ To run BrainQCNet on your data, you can either use the BIDS-app that works on **
 A list of Nvidia GPUs with CUDA technology is provided [here](https://developer.nvidia.com/cuda-gpus).
 
 **We strongly recommend users to run the app on a machine with CUDA-compatible GPU !**
+
+
+### How to report errors
+Users can get help using the [brainqcnet-users mailing list](https://groups.google.com/g/brainqcnet-users).
+All bugs, concerns and enhancement requests for this software can be submitted [here](https://github.com/garciaml/BrainQCNet_CPU/issues).
+
+### Citation
+When using BrainQCNet, please include the following citation:
