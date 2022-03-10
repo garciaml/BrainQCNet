@@ -1,4 +1,4 @@
-# DOC for CPU 
+# Documentation for CPU users
 
 All the code of BrainQCNet for CPU machines is available [here](https://github.com/garciaml/BrainQCNet_CPU).
 
