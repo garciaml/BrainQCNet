@@ -19,3 +19,9 @@ All bugs, concerns and enhancement requests for this software can be submitted [
 
 ### Citation
 When using BrainQCNet, please include the following citation:
+
+BrainQCNet: a Deep Learning attention-based model for multi-scale detection of artifacts in brain structural MRI scans
+
+Melanie Garcia, Nico Dosenbach, Clare Kelly
+
+bioRxiv 2022.03.11.483983; doi: https://doi.org/10.1101/2022.03.11.483983
