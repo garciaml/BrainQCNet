@@ -60,3 +60,8 @@ Here, it generates the results for sub-20001 and sub-20003 present into our BIDS
 docker run -it --rm --gpus all -v /home/user/BIDS_data/:/bids_dir:ro -v /home/user/out_brainqcnet/:/out_dir brainqcnet /bids_dir /out_dir group
 ```
 This command-line launches the analysis at the group level: it gathers all the results from the analyses at the participant level, and stores the results into a file called **group_results.csv** into the folder out_brainqcnet.
+
+## Citation
+When using BrainQCNet, please cite:
+
+*BrainQCNet: a Deep Learning attention-based model for multi-scale detection of artifacts in brain structural MRI scans*, Melanie Garcia, Nico Dosenbach, Clare Kelly. bioRxiv 2022.03.11.483983; doi: https://doi.org/10.1101/2022.03.11.483983
