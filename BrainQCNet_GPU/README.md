@@ -64,4 +64,6 @@ This command-line launches the analysis at the group level: it gathers all the r
 ## Citation
 When using BrainQCNet, please cite:
 
-*BrainQCNet: a Deep Learning attention-based model for multi-scale detection of artifacts in brain structural MRI scans*, Melanie Garcia, Nico Dosenbach, Clare Kelly. bioRxiv 2022.03.11.483983; doi: https://doi.org/10.1101/2022.03.11.483983
+*BrainQCNet: A Deep Learning attention-based model for the automated detection of artifacts in brain structural MRI scans.*, Mélanie Garcia, Nico Dosenbach, Clare Kelly;  Imaging Neuroscience 2024; 2 1–16. doi: https://doi.org/10.1162/imag_a_00300
+
+
